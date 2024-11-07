@@ -136,6 +136,7 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
+  cursor: pointer;
 }
 
 .search-form__label {
@@ -155,6 +156,7 @@ input {
   border-inline: none;
   border-block: 1px solid #fff;
   padding-block: 3px;
+  color: currentColor;
   font-family: inherit;
   font-size: 18px;
   line-height: 1.2;
@@ -234,14 +236,13 @@ input {
   position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 25px;
   overflow-y: auto;
   block-size: 100%;
 }
 
 .content__list-item {
   max-width: 398px;
-  max-height: 107px;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -253,13 +254,12 @@ input {
   text-decoration: none;
 }
 
-.content__card-link:hover .content__video-card-description-container {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
 .content__card-link_current,
 .content__card-link:active {
-  position: relative;
   display: block;
   background-color: #545050;
 }
@@ -311,8 +311,4 @@ input {
   max-height: 103px;
   object-fit: cover;
   object-position: center;
-}
-
-.more-button {
-  align-self: flex-end;
 }
